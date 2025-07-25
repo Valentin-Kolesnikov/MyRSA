@@ -1,4 +1,4 @@
-My Self-made implementation of the RSA algorithm.  
+My self-made Python implementation of the RSA algorithm.  
 The script allows you to encrypt and decrypt a message using a pair of prime numbers.  
 
 -Functionality:  
