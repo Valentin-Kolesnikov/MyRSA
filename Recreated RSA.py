@@ -24,7 +24,7 @@ def rsa_encrypt_decrypt():
     answer = int(input("Eng = 1 or Rus = 2:"))
     if answer == 1:
         abc = "abcdefghijklmnopqrstuvwxyz"
-    else:
+    elif answer == 2:
         abc = "абвгдеёжзийклмнопрстуфхцчшщъыьэюя"
     abc_dict = {c: i + 1 for i, c in enumerate(abc)}
     rev_abc_dict = {i + 1: c for i, c in enumerate(abc)}
@@ -37,7 +37,7 @@ def rsa_encrypt_decrypt():
     p = int(input("Choose prime p: "))
     q = int(input("Choose prime q > p: "))
 
-    while q <= p:
+    while q <= p or p == 2 and q == 3 or p == 2 and q == 5 or p == 2 and q == 7 or p == 3 and q == 5:
         print("Invalid numbers. Try again.")
         p = int(input("Choose prime p: "))
         q = int(input("Choose prime q > p: "))
