@@ -21,7 +21,7 @@ def modinv(a, m):
 
 
 def rsa_encrypt_decrypt():
-    answer = int(input("Eng = 1 or Rus = 2:"))
+    answer = int(input("Eng = 1 or Rus = 2: "))
     if answer == 1:
         abc = "abcdefghijklmnopqrstuvwxyz"
     elif answer == 2:
@@ -29,22 +29,22 @@ def rsa_encrypt_decrypt():
     abc_dict = {c: i + 1 for i, c in enumerate(abc)}
     rev_abc_dict = {i + 1: c for i, c in enumerate(abc)}
 
-    msg = input("Enter a message: ").lower()
+    msg = input("\nEnter a message: ").lower()
     X = [abc_dict[c] for c in msg if c in abc_dict]
 
     print("X:", X)
 
-    p = int(input("Choose prime p: "))
-    q = int(input("Choose prime q > p: "))
+    p = int(input("\nChoose prime p: "))
+    q = int(input("\nChoose prime q > p: "))
 
     while q <= p or p == 2 and q == 3 or p == 2 and q == 5 or p == 2 and q == 7 or p == 3 and q == 5:
         print("Invalid numbers. Try again.")
-        p = int(input("Choose prime p: "))
-        q = int(input("Choose prime q > p: "))
+        p = int(input("\nChoose prime p: "))
+        q = int(input("\nChoose prime q > p: "))
 
     n = p * q
     f = (p - 1) * (q - 1)
-    print("n=", n)
+    print("\nn=", n)
     print("f=", f)
 
     d = find_coprime(f)
@@ -57,10 +57,12 @@ def rsa_encrypt_decrypt():
 
     print("d:", d)
     print("e:", e)
-    print("Encrypted (Y):", Y)
-    print("Decrypted (X1):", X1)
-    print("Decrypted message:", decrypted_msg)
+    print("\nEncrypted (Y):", Y)
+    print("\nDecrypted (X1):", X1)
+    print("\nDecrypted message:", decrypted_msg)
 
 
 if __name__ == "__main__":
     rsa_encrypt_decrypt()
+
+input("\nPress Enter to exit...")
