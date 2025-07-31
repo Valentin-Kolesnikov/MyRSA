@@ -10,7 +10,7 @@ The script allows you to encrypt and decrypt a message using a pair of prime num
 - Display of intermediate steps.  
 
 ## How does it work?  
-1. Open the .exe file or .py if you have an interpretator. 
+1. Open the .exe file or .py file if you have an interpretator. 
 2. You choose English or Russian. 1 or 2, respectively.
 3. Write the message (one word). You can write uppercase and lowercase letters.
 4. Choose the prime number p that you want.
