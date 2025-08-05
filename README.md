@@ -1,4 +1,5 @@
 # My self-made Python implementation of the RSA algorithm  
+
 The script allows you to encrypt and decrypt a message using a pair of prime numbers.  
 
 ## Important clarification!!!  
@@ -14,7 +15,7 @@ The `.exe` file does not have viruses. It was created for convenience. I made th
 - Display of intermediate steps.  
 
 ## How does it work?  
-1. Open the .exe file or .py file if you have an interpretator. 
+1. Open the `.exe` file or `.py` file. 
 2. You choose English or Russian. 1 or 2, respectively.
 3. Write the message (one word). You can write uppercase and lowercase letters.
 4. Choose the prime number p that you want.
